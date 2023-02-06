@@ -124,8 +124,6 @@
 
 .card-badge::before { --skewX: -10deg; }
 
-.w-100 { width: 100%; }
-
 .section-text {
   color: hsl(0, 0%, 80%);
   font-size: var(1.5rem);
@@ -235,8 +233,64 @@
 }
 
 /*-----------------------------------*\
-  #NAVBAR
+  #LIVE
 \*-----------------------------------*/
+
+.live
+{
+  background: #000000;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.5s;
+  display: flex;
+  width: 96%;
+}
+
+.live .section-title
+{
+  color:hsl(0, 0%, 100%);
+  margin-block-end: 0 px;
+}
+
+.live .container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.live table
+{
+  margin: 200px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  left: 100%;
+
+}
+
+.live tr td
+{
+  border: 2px solid #454545;
+  text-align: center;
+  padding: 20px;
+}
+
+.live th 
+{
+  background-color: #ffcc00;
+  color: #000000;
+  padding: 20px;
+}
+
 
 @media (min-width: 1200px) 
 {
@@ -250,6 +304,8 @@
   .h1 { --fs-2: 7.5rem; }
 
   .scrollbar-item { min-width: calc(25% - 22.5px); }
+
+  
 
  
 
