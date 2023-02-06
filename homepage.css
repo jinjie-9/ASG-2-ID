@@ -291,6 +291,140 @@
   padding: 20px;
 }
 
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+
+.footer { color: hsl(220, 6%, 59%); }
+
+.footer-top 
+{ 
+  padding-block-end: 120px;
+  background-color: #000;
+
+}
+
+
+.footer-top .container {
+  margin-left: 250px ;
+  display: flex;
+  gap: 50px;
+}
+
+.footer .logo 
+{ 
+  margin-block-end: 35px;
+  text-decoration: none;
+  font-size: 2.0rem;
+  font-weight: 500;
+  margin-top: 130px;
+  color:hsl(42, 99%, 46%);
+}
+
+.footer-text,
+.footer .contact-item {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.footer-text { margin-block-end: 15px; }
+
+.contact-item:not(:last-child) { margin-block-end: 10px; }
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.item-text
+{
+  text-decoration: none;
+  font-size: 25px;
+  color:silver
+}
+
+.contact-icon {
+  margin-block-start: 3px;
+  font-size: 20px;
+}
+
+.footer-list-title {
+  position: relative;
+  color: hsl(0, 0%, 78%);
+  font-family: 'Oxanium', cursive;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding-block-end: 20px;
+  margin-block-end: 35px;
+  margin-top: 90px;
+}
+
+
+.footer-wrapper 
+{ margin-block-end: -40px;
+}
+
+.footer .social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-link {
+  color: var(--white);
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.footer-newsletter { position: relative; }
+
+.footer-newsletter .email-field {
+  background-color:  hsl(280, 8%, 15%);
+  padding: 12px 20px;
+  padding-inline-end: 60px;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 53px;
+  background-color: hsl(42, 99%, 46%);
+  color: hsl(277, 25%, 10%);
+  display: grid;
+  place-content: center;
+}
+
+
+.footer-bottom {
+  background-color: hsl(280, 7%, 8%);
+  padding-block: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-left: 150px;
+}
+
+.copyright-link 
+{
+  display: inline-block;
+  color: hsl(42, 99%, 46%);
+}
+
+
+
+
+
 
 @media (min-width: 1200px) 
 {
