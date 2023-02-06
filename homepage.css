@@ -135,6 +135,19 @@
   margin-left: 460px;
 }
 
+.skewBg {
+  position: relative;
+  z-index: 1;
+}
+
+.skewBg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: skewX(var(--skewX, -16deg));
+  background-color:hsl(42, 99%, 46%);
+  z-index: -1;
+}
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -264,7 +277,7 @@
 
 .live table
 {
-  margin: 200px;
+  margin: 150px;
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -284,6 +297,92 @@
   background-color: #ffcc00;
   color: #000000;
   padding: 20px;
+}
+
+/*-----------------------------------*\
+  #SHOP
+\*-----------------------------------*/
+
+.shop 
+{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.shop .section-title
+{
+  margin-left: 190px;
+}
+
+.shop .section-text { margin-block: 50px 55px; }
+
+
+.shop .has-scrollbar 
+{
+  margin-inline: -15px;
+  padding-inline: 15px;
+  scroll-padding-inline-start: 15px;
+  margin: 0 0 0 160px;
+}
+
+.shop-card 
+{
+  box-shadow: 0px 5px 10px 1px hsla(0, 0%, 0%, 0.15);
+  height: 100%;
+}
+
+.shop-card .card-content {
+  position: relative;
+  padding: 25px;
+  padding-block-start: 40px;
+}
+
+.shop-card .card-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shop-card .h3 { font-size: 1.2rem;}
+
+.shop-card .card-title 
+{
+  transition: 0.25s ease;
+  margin-block-end: 10px;
+  text-decoration: none;
+}
+
+.shop-card .card-title:is(:hover, :focus) { color: hsl(42, 99%, 46%); }
+
+.shop-card .card-wrapper 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(42, 99%, 46%);
+}
+
+.shop-card .card-price
+{
+  font-family:'Oxanium', cursive;
+  font-weight: 800;
+}
+
+.shop-card .card-btn {
+  background-color: hsla(0, 0%, 100%, 0.9);
+  font-size: 15px;
+  padding: 3px;
+  border: 1px solid  hsl(0, 0%, 100%);
+  border-radius: 4px;
+  transition: 0.25s ease;
+}
+
+.shop-card .card-btn:is(:hover, :focus) {
+  background-color: hsl(42, 99%, 46%);
+  color: hsla(280, 37%, 8%, 0.9);
+  border-color:hsl(42, 99%, 46%);
 }
 
 /*-----------------------------------*\
@@ -416,6 +515,63 @@
   color: hsl(42, 99%, 46%);
 }
 
+
+@media (min-width: 1200px) 
+  {
+
+    /*** 
+    REUSED STYLE
+    ***/
+  
+    .container { max-width: 1280px; }
+  
+    .h1 { --fs-2: 7.5rem; }
+  
+    .scrollbar-item { min-width: calc(25% - 22.5px); }
+  
+  
+    
+  
+
+  
+    /**
+     * FEATURED GAME
+     */
+  
+    .featured-game .has-scrollbar { padding-block-end: 10; }
+  
+    .featured-game .scrollbar-item { min-width: -10%; }
+  
+
+    /**
+     * SHOP
+     */
+  
+    .shop .has-scrollbar { padding-block-end: 15px; }
+  
+
+    /**
+     * NEWSLETTER
+     */
+  
+    .newsletter-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-inline: 70px;
+    }
+  
+    .newsletter .h2 { margin-block-end: 0; }
+  
+  
+    /**
+     * FOOTER
+     */
+  
+    .footer .container { grid-template-columns: 1fr 0.7fr 0.7fr 1fr; }
+  
+  }
+  
 
 
 
