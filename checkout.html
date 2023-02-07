@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/61a6ca8d1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="banner2">
+        <nav class="navbar">
+            <img src="Images/Logo.png" alt = "logo" class="logo">
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="homepage.html#live">Live</a></li>
+                <li><a href="homepage.html#shop">Shop</a></li>
+                <li><a href="homepage.html#games.html">Games</a></li>
+                <li><a href="homepage.html#footer">Contact</a></li>
+                <li><a href="quiz.html" target="_blank">Quiz</a></li>
+                <li><a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+        </nav>
+    </div>
+    <section class="checkout-container content-section">
+        <h1 class="section-title">Products</h1>
+        <div class="shop-items">
+            <div class="checkout">
+                <span class="checkout-title">Razer RGB Keyboard</span>
+                <img class="checkout-image" src="Images/shop-img-1.jpg">
+                <div class="checkout-details">
+                    <span class="checkout-price">$100.00</span>
+                    <button class="checkout-btn" type="button"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+            <div class="checkout">
+                <span class="checkout-title">Xbox Controller</span>
+                <img class="checkout-image" src="Images/shop-img-2.jpg">
+                <div class="checkout-details">
+                    <span class="checkout-price">$50.00</span>
+                    <button class="checkout-btn"type="button"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+            <div class="checkout">
+                <span class="checkout-title">GEFORCE RTX 2070</span>
+                <img class="checkout-image" src="Images/shop-img-3.jpg">
+                <div class="checkout-details">
+                    <span class="checkout-price">$700.00</span>
+                    <button class="checkout-btn" type="button"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+            <div class="checkout">
+                <span class="checkout-title">Visual Reality</span>
+                <img class="checkout-image" src="Images/shop-img-4.jpg">
+                <div class="checkout-details">
+                    <span class="checkout-price">$2500.00</span>
+                    <button class="btn btn-primary checkout-btn" type="button"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="total-container content-section">
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title"></strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <script src="checkout.js"></script>
+</body>
+</html>
+
