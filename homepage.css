@@ -385,6 +385,83 @@
   border-color:hsl(42, 99%, 46%);
 }
 
+
+/*-----------------------------------*\
+  #FEATURED-GAME
+\*-----------------------------------*/
+
+.featured-game 
+{
+  background-color:  hsl(0, 0%, 97%); 
+  padding: 100px;
+}
+
+.featured-game .section-title
+{
+  color:hsl(277, 25%, 10%);
+  margin-block-end: 110px;
+}
+
+.featured-game .has-scrollbar { gap: 0; }
+
+.featured-game-card 
+{
+   position: relative; 
+
+}
+
+.featured-game-card :is(.card-content, .card-content-overlay) { position: absolute; }
+
+.featured-game-card .card-content {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 35px;
+  transition: 0.25s ease;
+}
+
+.featured-game-card .card-content-overlay {
+  inset: 0;
+  background-color: hsla(42, 99%, 46%, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.featured-game-card .card-title { margin-block-end: 5px;
+color:hsl(0, 0%, 100%) }
+
+.featured-game-card .card-meta {
+  color:  hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.featured-game-card .card-content .card-meta { color: hsl(0, 0%, 89%); }
+
+.featured-game-card .card-content ion-icon {
+  color: hsl(42, 99%, 46%);
+  font-size: 14px;
+}
+
+.featured-game-card .card-icon { margin-block-end: 20px; }
+
+.featured-game-card .card-content-overlay .card-title { color: hsl(277, 25%, 10%); }
+
+.featured-game-card .card-content-overlay .span { color:  hsl(0, 0%, 100%); }
+
+.featured-game-card:is(:hover) .card-content { opacity: 0; }
+
+.featured-game-card:is(:hover) .card-content-overlay { opacity: 1; }
+
+
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
