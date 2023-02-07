@@ -1,3 +1,17 @@
+///////////////////////////////////////////////////////////////////////////////////
+//Firstly it is to check the document is ready to be manipulated                 //
+//Then it is to create a function to remove the item from the cart               //
+//Then it is to create a function to change the quantity of the item in the cart //
+// -if the quantity is less than 1 then it will be set to 1                      //
+//Then it is to create a function to add the item to the cart                    //
+// -if the item is already in the cart then it will not be added again           //
+// -next it will create a div to diplay in the website                           //
+//Then it is to create a function to update the total price of the cart          //
+// -it will loop through the cart and add the price of each item                 //
+// -it will then add the total price to the cart                                 //
+///////////////////////////////////////////////////////////////////////////////////
+
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {

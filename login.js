@@ -1,3 +1,11 @@
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Create 3 arrays                                                                          //
+// Use GET method to compare with the input for email and password                         //
+// -If the email and password entered is same as one of the set of data in database       //
+// Then we move to homepage page                                                         // 
+// -Else will continue to stay as the login page                                         //
+/////////////////////////////////////////////////////////////////////////////////////////
+
 var contact = [];
 var tempArr = []
 var loginEmail;
@@ -5,26 +13,18 @@ var loginPassword;
 var check;
 $(document).ready(function () 
 {
-    //what kind of interface we want at the start 
     const APIKEY = "63c6bb0e969f06502871af99";
     checkLogin();
     
     
-    
-
-    //[STEP 1]: Create our submit form listener
     $("#login-submit").on("click", function (e) {
-        //prevent default action of the button 
+
         e.preventDefault();
 
-        //[STEP 2]: let's retrieve form data
-        //for now we assume all information is valid
-        //you are to do your own data validation 
         let loginEmail = $("#login-email").val();
         let loginPassword = $("#login-password").val();
 
-        //[STEP 3]: get form values when user clicks on send
-        //Adapted from restdb api
+
         let jsondata = 
         { 
             "email": loginEmail,
@@ -113,7 +113,7 @@ $(document).ready(function ()
         var total = 0 ;
         var totalPoint = 0;
         $("#total-points").on("click", function (e) {
-            //prevent default action of the button 
+
             e.preventDefault();
 
             let settings = 
@@ -139,7 +139,6 @@ $(document).ready(function ()
 
                     total = response[i].points += point;
                     totalPoint = total;
-                    //console.log(total);
 
                     
                 }
@@ -148,8 +147,7 @@ $(document).ready(function ()
             console.log(totalPoint);
 
             let loginPoints = totalPoint;
-            //[STEP 3]: get form values when user clicks on send
-            //Adapted from restdb api
+
             
             let jsondata = 
             { 
@@ -163,7 +161,7 @@ $(document).ready(function ()
                 "async": true,
                 "crossDomain": true,
                 "url": `https://login-5bdf.restdb.io/rest/login/${response[i].id}`,
-                "method": "PUT", //[cher] we will use post to send info
+                "method": "PUT", 
                 "headers": 
                 {
                     "content-type": "application/json",
@@ -177,18 +175,9 @@ $(document).ready(function ()
 
                 }
             }
-        
-            //[STEP 4]: Create our AJAX settings. Take note of API key
-            
-
-            //[STEP 5]: Send our ajax request over to the DB and print response of the RESTDB storage to console.
             $.ajax(setting).done(function (response) 
             {
                 console.log(response);
-                
-
-                
-                //update our table 
                 
             });
         });

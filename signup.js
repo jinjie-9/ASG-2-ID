@@ -1,3 +1,13 @@
+////////////////////////////////////////////////////////////////////////////////////////////
+// Create 3 arrays                                                                       //
+// Use GET method to compare with the input for email and password                      //
+// Use POST method to add the new user to the database                                 //
+// -if the email is already in the database then it will not be added again           //
+// -if the email is not in the database then it will be added to the database        //
+// -it will then display a message to the user to say that they have been added     //
+// Then we move to login page                                                      //
+////////////////////////////////////////////////////////////////////////////////////
+
 var contact = [];
 var tempArr = [];
 var doublecheck = [];
@@ -6,32 +16,24 @@ var loginPassword;
 var check;
 $(document).ready(function () 
 {
-    //what kind of interface we want at the start 
     const APIKEY = "63c6bb0e969f06502871af99";
     retrieveDatabase();
     checkdatabase();
     
-
-    //[STEP 1]: Create our submit form listener
     $("#signup-submit").on("click", function (e) 
     {
-        //prevent default action of the button 
+
         e.preventDefault();
 
-        //[STEP 2]: let's retrieve form data
-        //for now we assume all information is valid
-        //you are to do your own data validation 
+
         let loginEmail = $("#signup-email").val();
         let loginPassword = $("#signup-password").val();
-        let loginPoints = 0;
 
-        //[STEP 3]: get form values when user clicks on send
-        //Adapted from restdb api
+
         let jsondata = 
         { 
             "email": loginEmail,
-            "password": loginPassword,
-            "points": loginPoints
+            "password": loginPassword
         };
 
         let settings =
@@ -39,7 +41,7 @@ $(document).ready(function ()
             "async": true,
             "crossDomain": true,
             "url": "https://login-5bdf.restdb.io/rest/login",
-            "method": "POST", //[cher] we will use post to send info
+            "method": "POST", 
             "headers": 
             {
                 "content-type": "application/json",
@@ -51,22 +53,16 @@ $(document).ready(function ()
             "beforeSend": function()
             {
 
-                //clear our form using the form id and triggering it's reset feature
+
                 $("#signup-form").trigger("reset");
             }
         }
-    
-        //[STEP 4]: Create our AJAX settings. Take note of API key
-        
 
-        //[STEP 5]: Send our ajax request over to the DB and print response of the RESTDB storage to console.
         $.ajax(settings).done(function (response) 
         {
             console.log(response);
             
             $("#signup-submit").prop( "disabled", false);
-            
-            //update our table 
             
         });
         
@@ -86,7 +82,7 @@ $(document).ready(function ()
         
         
         
-    });//end click 
+    });
 
 
 
@@ -98,7 +94,7 @@ $(document).ready(function ()
             "async": true,
             "crossDomain": true,
             "url": "https://login-5bdf.restdb.io/rest/login",
-            "method": "GET", //[cher] we will use GET to retrieve info
+            "method": "GET",
             "headers": 
             {
                 "content-type": "application/json",
@@ -106,11 +102,7 @@ $(document).ready(function ()
                 "cache-control": "no-cache"
             },
         }
-    
-
-        //[STEP 8]: Make our AJAX calls
-        //Once we get the response, we modify our table content by creating the content internally. We run a loop to continously add on data
-        //RESTDb/NoSql always adds in a unique id for each data, we tap on it to have our data and place it into our links 
+     
         $.ajax(settings).done(function (response) 
         {
 
