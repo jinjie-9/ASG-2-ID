@@ -66,6 +66,14 @@ img
   background-image: url(Images/Sign\ &\ Log\ Image.jpeg);
 }
 
+.signup-right
+{
+  flex: 5;
+  background-position: center;
+  background-size: cover;
+  background-image: url(Images/Signup.jpeg);
+}
+
 .login-input
 {
   display: flex;
