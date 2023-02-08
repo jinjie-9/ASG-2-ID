@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
 
-    const heading = `
+    heading = `
     <tr>
         <th>Name</th>
         <th>Rating</th>

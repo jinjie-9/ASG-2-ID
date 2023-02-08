@@ -703,6 +703,7 @@ color:hsl(0, 0%, 100%) }
 }
 
 .footer-list-title {
+
   position: relative;
   color: hsl(0, 0%, 78%);
   font-family: 'Oxanium', cursive;
@@ -710,7 +711,7 @@ color:hsl(0, 0%, 100%) }
   font-weight: 800;
   padding-block-end: 20px;
   margin-block-end: 35px;
-  margin-top: 90px;
+  margin-top: 150px;
 }
 
 
@@ -724,12 +725,16 @@ color:hsl(0, 0%, 100%) }
 }
 
 .footer .social-link {
-  color: var(--white);
+  color: white;
   padding: 10px;
   border-radius: 2px;
 }
 
-.footer-newsletter { position: relative; }
+.footer-newsletter 
+{ 
+  position: relative;
+  margin-top: -40px;
+}
 
 .footer-newsletter .email-field {
   background-color:  hsl(280, 8%, 15%);
@@ -771,6 +776,11 @@ color:hsl(0, 0%, 100%) }
   color: hsl(42, 99%, 46%);
 }
 
+iframe
+{
+  height: 100%;
+  width: 50%;
+}
 
 
 @media (min-width: 1200px) 
