@@ -11,14 +11,13 @@
 // -it will then add the total price to the cart                                 //
 ///////////////////////////////////////////////////////////////////////////////////
 
+var cart = [];
 
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
-
-var cart = [];
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
@@ -42,13 +41,22 @@ function ready() {
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
-function purchaseClicked() {
-    alert('Thank you for your purchase')
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
+function purchaseClicked()
+{
+    if (cart.length == 0) 
+    {
+        alert('You have no items in your cart')
+    } 
+    else 
+    {
+        alert('Thank you for your purchase')
+        var cartItems = document.getElementsByClassName('cart-items')[0]
+        while (cartItems.hasChildNodes()) 
+        {
+            cartItems.removeChild(cartItems.firstChild)
+        }
     }
-    
+    cart = [];
     updateCartTotal()
 }
 
@@ -56,6 +64,8 @@ function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
+    localStorage.setItem("cart", JSON.stringify(cart));
+    cart.pop();
 
 }
 
@@ -74,6 +84,7 @@ function addToCartClicked(event) {
     var price = shopItem.getElementsByClassName('checkout-price')[0].innerText
     var imageSrc = shopItem.getElementsByClassName('checkout-image')[0].src
     addItemToCart(title, price, imageSrc)
+    cart.push(title);
     updateCartTotal()
 }
 
@@ -100,12 +111,7 @@ function addItemToCart(title, price, imageSrc) {
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
-    var name = localStorage.setItem("title", JSON.stringify(title));
-    var amount = localStorage.setItem("price", JSON.stringify(price));
-    var pic = localStorage.setItem("imageSrc", JSON.stringify(imageSrc));
-    cart.push(name);
-    cart.push(amount);
-    cart.push(pic);
+    localStorage.setItem("cart", JSON.stringify(cart));
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
