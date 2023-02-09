@@ -864,13 +864,6 @@ iframe
     padding: 15px;
     line-height: 20px;
   }
-  nav ul li ul li a {
-    padding-left: 30px;
-  }
-
-  .nav-dropdown {
-    position: static;
-  }
 }
 @media screen and (min-width: 799px) {
   .nav-list {
@@ -916,14 +909,7 @@ iframe
   transform: rotate(-45deg);
 }
 
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+
 
 #lottie-subtitle
 {

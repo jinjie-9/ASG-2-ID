@@ -39,7 +39,7 @@ $(document).ready(function ()
             window.location.href = "lottie.html";
             
         }
-        else if (checkLogin2() == false)
+        else
         {
             alert("Login failed");
             console.log("Login Unsuccessful");
