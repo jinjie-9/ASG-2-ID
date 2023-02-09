@@ -54,6 +54,23 @@ Things to include:
 - Click purchase button to buy and message:'Thank you for shopping with us' will pop out
 
 
+Mobile WireFrane:
+
+Sign Up Page
+![Screenshot_20230209_070530](https://user-images.githubusercontent.com/115684616/217796906-1ba2284e-03e6-4fb3-9868-e5dbe2b709ed.png)
+
+Login Page
+![Screenshot_20230209_070553](https://user-images.githubusercontent.com/115684616/217797033-deaa5b65-2042-4189-b98b-9fb9e93f8221.png)
+
+Homepage
+![Screenshot_20230209_070617](https://user-images.githubusercontent.com/115684616/217797137-ce501bb4-24de-4fb7-8032-04d486dad304.png)
+![Screenshot_20230209_070553](https://user-images.githubusercontent.com/115684616/217797142-b0188d31-c28b-47a0-a86c-5473645beedc.png)
+
+Quiz Page
+![Screenshot_20230209_070632](https://user-images.githubusercontent.com/115684616/217797579-5bdc2122-4bdc-4c17-a2db-d06df100759c.png)
+
+CheckOut Page
+![Screenshot_20230209_070648](https://user-images.githubusercontent.com/115684616/217797621-c653aad7-f81e-4368-818b-a73acca1d071.png)
 
 
 
