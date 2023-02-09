@@ -915,3 +915,17 @@ iframe
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#lottie-subtitle
+{
+  color:#000000;
+}

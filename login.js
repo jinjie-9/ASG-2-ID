@@ -36,7 +36,7 @@ $(document).ready(function ()
         {
             alert("Login successful");
             console.log(check);
-            window.location.href = "homepage.html";
+            window.location.href = "lottie.html";
             
         }
         else if (checkLogin2() == false)
