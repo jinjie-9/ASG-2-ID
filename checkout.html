@@ -9,19 +9,38 @@
     <script src="https://kit.fontawesome.com/61a6ca8d1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="banner2">
-        <nav class="navbar">
-            <img src="Images/Logo.png" alt = "logo" class="logo">
-            <ul>
-                <li><a href="homepage.html">Home</a></li>
-                <li><a href="homepage.html#live">Live</a></li>
-                <li><a href="homepage.html#shop">Shop</a></li>
-                <li><a href="homepage.html#games.html">Games</a></li>
-                <li><a href="homepage.html#footer">Contact</a></li>
-                <li><a href="quiz.html" target="_blank">Quiz</a></li>
-                <li><a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-        </nav>
-    </div>
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="homepage.html">Home</a>
+              </li>
+              <li>
+                <a href="homepage.html#live">Live</a>
+              </li>
+              <li>
+                <a href="homepage.html#shop">Shop</a>
+              </li>
+              <li>
+                <a href="homepage.html#features">Games</a>
+              </li>
+              <li>
+                <a href="homepage.html#footer">Contact</a>
+              </li>
+              <li>
+                <a href="quiz.html">Quiz</a>
+              </li>
+              <li>
+                <a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </section>
     <section class="checkout-container content-section">
         <h1 class="section-title">Products</h1>
         <div class="shop-items">
@@ -73,7 +92,9 @@
         </div>
         <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="checkout.js"></script>
+    <script src="nav.js"></script>
 </body>
 </html>
 

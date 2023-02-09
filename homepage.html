@@ -10,24 +10,39 @@
         <title>Homepage</title>
     </head>
     <body>
-        <div class="banner">
-            <nav class="navbar">
-                <img src="Images/Logo.png" alt = "logo" class="logo">
-                <ul>
-                    <li><a href="homepage.html">Home</a></li>
-                    <li><a href="#live">Live</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#features">Games</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
-            <div class="about">
-                <h2 class="h2 section-title">Just for   <span class="span"> Gamers</span></h2>
-                <h3 class="section-text">This is a website that provides information about the latest games and their ratings. It also provides a platform for gamers to buy games and play them online.</h3>
+       <section class="navigation">
+          <div class="nav-container">
+            <div class="brand">
             </div>
-        </div>
+            <nav>
+              <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+              <ul class="nav-list">
+                <li>
+                  <a href="#!">Home</a>
+                </li>
+                <li>
+                  <a href="#live">Live</a>
+                </li>
+                <li>
+                  <a href="#shop">Shop</a>
+                </li>
+                <li>
+                  <a href="#features">Games</a>
+                </li>
+                <li>
+                  <a href="#footer">Contact</a>
+                </li>
+                <li>
+                  <a href="quiz.html">Quiz</a>
+                </li>
+                <li>
+                  <a href="checkout.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+      </section>
+
 
         <section class="section live" id="live" aria-label="live">
             <div class="container">
@@ -321,8 +336,10 @@
               <div class="container">
         
                 <div class="footer-brand">
-        
-                  <a href="#" class="logo">GAMRIX</a>
+                  
+                  <p class=" h2 footer-title">
+                    <span class="span">GAMRIX</span>
+                  </p>
         
                   <ul class="contact-list">
 
@@ -413,7 +430,7 @@
               <div class="container">
         
                 <p class="copyright">
-                  &copy; 2023 Gamrix. All Right Reserved by <span class="copyright-link">gamerix</span>
+                  &copy; 2023 Gamrix. All Right Reserved by <a href="#"><span class="copyright-link">gamerix</span></a>
                 </p>
         
         
@@ -424,6 +441,7 @@
           </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="live.js"></script>
+    <script src="nav.js"></script>
     </body>
 </html>
 

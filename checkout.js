@@ -38,6 +38,7 @@ function ready() {
         button.addEventListener('click', addToCartClicked)
     }
 
+
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
@@ -111,7 +112,6 @@ function addItemToCart(title, price, imageSrc) {
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
-    localStorage.setItem("cart", JSON.stringify(cart));
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
