@@ -54,29 +54,29 @@ Things to include:
 - Include All the product with the price
 - Click purchase button to buy and message:'Thank you for shopping with us' will pop out
 
+
 Deskstop WireFrame
 
 **Sign Up Page**
 
-![Screenshot_20230209_085418](https://user-images.githubusercontent.com/115684616/217819261-98b0b3eb-cbf3-4994-9de9-2d527a33f55c.png)
+ ![Screenshot_20230209_085418](https://user-images.githubusercontent.com/115684616/217819261-98b0b3eb-cbf3-4994-9de9-2d527a33f55c.png)
 
 
 **Login Page**
 
-![Screenshot_20230209_085349](https://user-images.githubusercontent.com/115684616/217819290-de61f32b-fcf4-4feb-8d13-9ace4c14360b.png)
+ ![Screenshot_20230209_085349](https://user-images.githubusercontent.com/115684616/217819290-de61f32b-fcf4-4feb-8d13-9ace4c14360b.png)
 
 **Homepage**
 
-![Screenshot_20230209_085349](https://user-images.githubusercontent.com/115684616/217819290-de61f32b-fcf4-4feb-8d13-9ace4c14360b.png)
-
+ ![Screenshot_20230209_085438](https://user-images.githubusercontent.com/115684616/217847276-1f0db852-9f00-4993-9427-c10903affa65.png)
 
 **Quiz Page**
 
-![Screenshot_20230209_085458](https://user-images.githubusercontent.com/115684616/217819381-bae23f9d-ec08-496a-8b52-657a0175b2f3.png)
+ ![Screenshot_20230209_085458](https://user-images.githubusercontent.com/115684616/217819381-bae23f9d-ec08-496a-8b52-657a0175b2f3.png)
 
 **CheckOut Page**
 
-![Screenshot_20230209_085512](https://user-images.githubusercontent.com/115684616/217819443-3f564c81-7d6e-435a-be29-8e091625975d.png)
+ ![Screenshot_20230209_085512](https://user-images.githubusercontent.com/115684616/217819443-3f564c81-7d6e-435a-be29-8e091625975d.png)
  
 
 Mobile WireFrane:
