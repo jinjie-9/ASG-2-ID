@@ -3,7 +3,7 @@
 // Use GET method to compare with the input for email and password                         //
 // -If the email and password entered is same as one of the set of data in database       //
 // Then we move to homepage page                                                         // 
-// -Else will continue to stay as the login page                                         //
+// -Else will continue to stay as the login page                                        //
 /////////////////////////////////////////////////////////////////////////////////////////
 
 var contact = [];
@@ -50,7 +50,6 @@ $(document).ready(function ()
 
     }); 
     
-    addPoints();
 
 
 
@@ -106,81 +105,6 @@ $(document).ready(function ()
         }
         
         
-    }
-
-    function addPoints()
-    {   
-        var total = 0 ;
-        var totalPoint = 0;
-        $("#total-points").on("click", function (e) {
-
-            e.preventDefault();
-
-            let settings = 
-            {
-                "async": true,
-                "crossDomain": true,
-                "url": "https://login-5bdf.restdb.io/rest/login",
-                "method": "GET",
-                "headers": {
-                    "content-type": "application/json",
-                    "x-apikey": APIKEY,
-                    "cache-control": "no-cache"
-                }
-            }
-            
-            $.ajax(settings).done(function (response) 
-            {
-
-                for (let i = 0; i < response.length; i++) 
-                {
-                
-                    var point = document.getElementById("point").value;
-
-                    total = response[i].points += point;
-                    totalPoint = total;
-
-                    
-                }
-            });
-
-            console.log(totalPoint);
-
-            let loginPoints = totalPoint;
-
-            
-            let jsondata = 
-            { 
-                "email": loginEmail,
-                "password": loginPassword,
-                "points": loginPoints
-            };
-
-            let setting =
-            {
-                "async": true,
-                "crossDomain": true,
-                "url": `https://login-5bdf.restdb.io/rest/login/${response[i].id}`,
-                "method": "PUT", 
-                "headers": 
-                {
-                    "content-type": "application/json",
-                    "x-apikey": APIKEY,
-                    "cache-control": "no-cache"
-                },
-                "processData": false,
-                "data": JSON.stringify(jsondata),
-                "beforeSend": function()
-                {
-
-                }
-            }
-            $.ajax(setting).done(function (response) 
-            {
-                console.log(response);
-                
-            });
-        });
     }
     
 });
