@@ -68,8 +68,7 @@ Deskstop WireFrame
 
 **Homepage**
 
- ![Screenshot_20230209_085349](https://user-images.githubusercontent.com/115684616/217819290-de61f32b-fcf4-4feb-8d13-9ace4c14360b.png)
-
+ ![Screenshot_20230209_085438](https://user-images.githubusercontent.com/115684616/217847276-1f0db852-9f00-4993-9427-c10903affa65.png)
 
 **Quiz Page**
 
