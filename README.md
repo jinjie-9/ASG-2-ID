@@ -134,9 +134,9 @@ https://user-images.githubusercontent.com/115684616/218013902-9636a88d-76c4-4c63
 
 ** Work Load **
 
-Natalie Chan : quiz html, css and js
+Natalie Chan : quiz html, quiz css and quiz js
 
-Jin Jie : All the files except for quiz html, css and js
+Jin Jie : All the files except for quiz html, quiz css and quiz js
 
 
 
