@@ -54,6 +54,25 @@ Things to include:
 - Include All the product with the price
 - Click purchase button to buy and message:'Thank you for shopping with us' will pop out
 
+## Technology Used:
+
+- HTML
+
+  > The project uses HTML for the HTML document of the website.
+
+- CSS
+
+  > The project uses CSS for styling of the website.
+
+- JavaScript & JQuery
+
+  > The project uses both JavaScript and JQuery to add functionality to the website.
+
+- RestDB
+  > The project uses restdb.io to store details regarding aspects such as user accounts.
+
+
+
 
 Deskstop WireFrame
 
