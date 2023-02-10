@@ -852,7 +852,7 @@ iframe
 
   nav {
     width: 100%;
-    padding: 90px 0 15px;
+    padding: 90px 0 0px;
   }
   nav ul {
     display: none;
@@ -884,7 +884,7 @@ iframe
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #ffffff;
+  background: hsla(0, 0%, 100%, 0.974);
   position: absolute;
   display: block;
   content: "";
