@@ -104,7 +104,7 @@ Mobile WireFrane:
 
 **Demo Link**:
 
- [https://jinjie-9.github.io/](https://github.com/jinjie-9/ASG-2-ID)
+https://github.com/jinjie-9/ASG-2-ID
 
 
 
