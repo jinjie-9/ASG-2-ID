@@ -126,7 +126,7 @@
 
 .section-text {
   color: hsl(0, 0%, 80%);
-  font-size: var(1.5rem);
+  font-size: 1.5rem;
   font-weight: 500;
   max-width: 65ch;
   margin-inline: auto;
@@ -798,9 +798,9 @@ iframe
      * FEATURED GAME
      */
   
-    .featured-game .has-scrollbar { padding-block-end: 10; }
+    .featured-game .has-scrollbar { padding-block-end: 10%; }
   
-    .featured-game .scrollbar-item { min-width: -10%; }
+    .featured-game .scrollbar-item { min-width: 10%; }
   
 
     /**
