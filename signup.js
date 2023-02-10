@@ -13,7 +13,7 @@ var tempArr = [];
 var doublecheck = [];
 var loginEmail;
 var loginPassword;
-var check;
+
 $(document).ready(function () 
 {
     const APIKEY = "63c6bb0e969f06502871af99";
@@ -22,50 +22,6 @@ $(document).ready(function ()
     
     $("#signup-submit").on("click", function (e) 
     {
-
-        e.preventDefault();
-
-
-        let loginEmail = $("#signup-email").val();
-        let loginPassword = $("#signup-password").val();
-
-
-        let jsondata = 
-        { 
-            "email": loginEmail,
-            "password": loginPassword
-        };
-
-        let settings =
-        {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://login-5bdf.restdb.io/rest/login",
-            "method": "POST", 
-            "headers": 
-            {
-                "content-type": "application/json",
-                "x-apikey": APIKEY,
-                "cache-control": "no-cache"
-            },
-            "processData": false,
-            "data": JSON.stringify(jsondata),
-            "beforeSend": function()
-            {
-
-
-                $("#signup-form").trigger("reset");
-            }
-        }
-
-        $.ajax(settings).done(function (response) 
-        {
-            console.log(response);
-            
-            $("#signup-submit").prop( "disabled", false);
-            
-            
-        });
         
         
         if (checkdatabase() == false)
@@ -75,6 +31,50 @@ $(document).ready(function ()
         }
         else 
         {
+            e.preventDefault();
+
+
+            let loginEmail = $("#signup-email").val();
+            let loginPassword = $("#signup-password").val();
+
+
+            let jsondata = 
+            { 
+                "email": loginEmail,
+                "password": loginPassword
+            };
+
+            let settings =
+            {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://login-5bdf.restdb.io/rest/login",
+                "method": "POST", 
+                "headers": 
+                {
+                    "content-type": "application/json",
+                    "x-apikey": APIKEY,
+                    "cache-control": "no-cache"
+                },
+                "processData": false,
+                "data": JSON.stringify(jsondata),
+                "beforeSend": function()
+                {
+
+
+                    $("#signup-form").trigger("reset");
+                }
+            }
+
+            $.ajax(settings).done(function (response) 
+            {
+                console.log(response);
+                
+                $("#signup-submit").prop( "disabled", false);
+                
+                
+            });
+
             alert("Sign in ok");
             console.log(check);  
             window.location.href = "login.html";
